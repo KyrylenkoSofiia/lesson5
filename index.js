@@ -16,7 +16,7 @@ function wordsStructure(str) {
 
     }
 
-    console.log(wordCharacteristicksArr)
+    console.log('task 1:', wordCharacteristicksArr)
 }
 
 wordsStructure(myStr)
@@ -32,9 +32,29 @@ function changeFour(arr) {
 }
 
 let result = changeFour(array);
-console.log(array)
-console.log(result)
+console.log('task 2 (array):', array)
+console.log('task 2 (copy of array with changed element)', result)
 
 // task 3
 
+function calcSum(arr) {
+    let calcSumArr = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (isNaN(arr[i])) {
+            continue
+        }
+        calcSumArr += arr[i]
+    }
 
+    return calcSumArr
+}
+
+let sum1 = calcSum([]);
+let sum2 = calcSum([1,2,3]);
+let sum3 = calcSum([5,0,10, 1, 5, null, 'some string']);
+
+console.log('task 3 (sum1):', sum1)
+
+console.log('task 3 (sum1):', sum2)
+
+console.log('task 3 (sum1):', sum3)
