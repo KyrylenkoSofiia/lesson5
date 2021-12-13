@@ -23,4 +23,18 @@ wordsStructure(myStr)
 
 // task 2
 
+let array = [1, 2, 3, 4, 5];
+
+function changeFour(arr) {
+   const newArr = arr.slice()
+   newArr.splice(3, 1, 'JavaScript')
+   return newArr
+}
+
+let result = changeFour(array);
+console.log(array)
+console.log(result)
+
+// task 3
+
 
